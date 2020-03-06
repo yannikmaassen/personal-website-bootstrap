@@ -6,97 +6,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yannik Maaßen</title>
 </head>
-<body>
+<body class="bg-dark">
+    <div class="container bg-light">
+
     <!-- Header mit Hauptüberschrift (Name), 2 anchors für die Links zum Kontakt und der Biografie -->
-    <header>
-        <h1>Yannik Maaßen</h1>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="#">Kontakt<span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Biografie</a>
-                  </li>
-        </nav>
+    <header class="row mb-5 bg-dark">
+        <h1 class="col-12 text-center text-white">Yannik Maaßen</h1>
+        <ul class="nav nav-pills col-12 justify-content-center">
+            <li class="nav-item bg-dark">
+              <a class="nav-link text-light" href="#kontakt">Kontakt</a>
+            </li>
+            <li class="nav-item bg-dark">
+              <a class="nav-link text-light" href="#biografie">Biografie</a>
+            </li>
+            </ul>
     </header>
 
     <!-- Section für Foto (img), Einleitungstext (p) und tag list (spans) -->
-<section>
-    <img src="Maaßen_Profilbild.jpg" alt="Foto Yannik Maaßen">
-    <p>Lorem, ipsum dolor sit amet.</p>
-    <h3>Skills</h3>
-    <ul class="list-group list-group-horizontal">
-        <li class="list-group-item">Shell</li>
-        <li class="list-group-item">Git</li>
-        <li class="list-group-item">GitHub</li>
-        <li class="list-group-item">HTML</li>
-        <li class="list-group-item">Bootstrap</li>
-        <li class="list-group-item">CSS</li>
-      </ul>
+<section class="row">
+    <div class="col-xs-12 shadow-lg mb-3">
+        <p class="text-center pt-2 pb-2 h4">Hi, ich bin Yannik und ich werde bald ein Web-Entwickler sein. :)</p>
+            <img class="col mb-3 pb-4" src="Maaßen_Profilbild.jpg" alt="Foto Yannik Maaßen">
+    </div>
+    <div class="col-xs-12 mb-5 bg-white shadow-lg">
+        <h3 class="text-center pt-3">Skills</h3>
+        <ul class="tags">
+    <span class="badge badge-pill badge-info">HTML</span>
+    <span class="badge badge-pill badge-info">CSS</span>
+    <span class="badge badge-pill badge-info">Shell</span>
+    <span class="badge badge-pill badge-info">Git</span>
+    <span class="badge badge-pill badge-info">GitHub</span>
+        <h3 class="text-center pt-3">Soft Skills</h3>
+        <span class="badge badge-pill badge-info">Teamwork</span>
+    <span class="badge badge-pill badge-info">Kommunikation</span>
+    <span class="badge badge-pill badge-info">Konfliktlösung</span>
+    <span class="badge badge-pill badge-info">Besonnenheit</span>
+    <span class="badge badge-pill badge-info">Lernbereitschaft</span>
+</div>
 </section>
 
 <!-- Section für Kontaktangaben: Label für jeweils "Telefon" und "E-Mail" (vielleicht noch Logos einfügen). Input in Button oder anchor verwandeln mit Weiterleitung zum Telefon oder der Mailverwaltung-->
-<section>
-    <address>
-        <p>Telefon<br>
-          <a href="tel:+4915164703979">+49 15164703979</a>
+<section id="kontakt" class="shadow-lg">
+    <div class="row mb-5">
+        <p class="col text-center pt-2 h6">Telefon<br>
+          <a class="col" href="tel:+4915164703979">+49 15164703979</a>
         </p>
-        <p>E-Mail<br>
-            <a href="mailto:yannik.maassen@t-online.de">yannik.maassen@t-online.de</a>
+        <p class="col text-center h6">E-Mail<br>
+            <a class="col" href="mailto:yannik.maassen@t-online.de">yannik.maassen@t-online.de</a>
         </p>
-      </address>
-    
+      </div>
 </section>
 
 
 <!-- Section für die Weiterleitung zu den Social Networks man soll beim Klicken auf das Bild sowie auf den untenstehenden Link weitergeleitet werden-->
-<div class="card" style="width: 18rem;">
-    <img src="github_icon.png" class="card-img-top" alt="...">
+<div class="row">
+<div class="col-sm-12 col-lg-3 card mx-auto my-2 shadow-lg" style="width: 18rem;">
+    <a href="https://github.com/yannikmaassen"><img src="github_icon.png" class="card-img-top" alt="GitHub Icon"></a>
     <div class="card-body">
-      <h5 class="card-title">GitHub</h5>
+      <h5 class="card-title text-center">GitHub</h5>
       <p class="card-text"></p>
-      <a href="https://github.com/yannikmaassen" class="btn btn-primary">GitHub/yannikmaassen</a>
+      <a href="https://github.com/yannikmaassen" class="btn btn-primary btn-block">@yannikmaassen</a>
     </div>
   </div>
 
-  <div class="card" style="width: 18rem;">
-    <img src="codepen_icon.png" class="card-img-top" alt="...">
+  <div class="col-sm-12 col-lg-3 card mx-auto my-2 shadow-lg" style="width: 18rem;">
+    <a href="https://codepen.io/yannikmaassen"><img src="codepen_icon.png" class="card-img-top" alt="CodePen Icon"</a>
     <div class="card-body">
-      <h5 class="card-title">CodePen</h5>
+      <h5 class="card-title text-center">CodePen</h5>
       <p class="card-text"></p>
-      <a href="https://codepen.io/yannikmaassen" class="btn btn-primary">CodePen/yannikmaassen</a>
+      <a href="https://codepen.io/yannikmaassen" class="btn btn-primary btn-block">@yannikmaassen</a>
     </div>
   </div>
 
-  <div class="card" style="width: 18rem;">
-    <img src="LinkedIn_logo.png" class="card-img-top" alt="...">
+  <div class="col-sm-12 col-lg-3 card mx-auto my-2 shadow-lg" style="width: 18rem;">
+    <a href="https://www.linkedin.com/in/yannik-maa%C3%9Fen-8b3638155/"><img src="linkedin_icon.png" class="card-img-top" alt="LinkedIn Icon"></a>
     <div class="card-body">
-      <h5 class="card-title">LinkedIn</h5>
+      <h5 class="card-title text-center">LinkedIn</h5>
       <p class="card-text"></p>
-      <a href="https://www.linkedin.com/in/yannik-maa%C3%9Fen-8b3638155/" class="btn btn-primary">LinkedIn/yannikmaassen</a>
+      <a href="https://www.linkedin.com/in/yannik-maa%C3%9Fen-8b3638155/" class="btn btn-primary btn-block">@yannik-maaßen</a>
     </div>
   </div>
+</div>
 
 
 
 
 
 <!-- Section für den erweiterten deskriptiven Text und den tabellarischen Lebenslauf -->
-<section>
+<section id="biografie" class="shadow-lg mt-3 bg-white">
     <span>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos totam dolores labore, autem animi vel ut. Eos fuga maxime eius omnis! Veritatis repellat corrupti consequuntur quis aperiam, magnam nihil doloribus!</p>
+        <h3 class="text-center text-warning p-2">Wer bin ich eigentlich?</h3>
+        <p class="p-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos totam dolores labore, autem animi vel ut. Eos fuga maxime eius omnis! Veritatis repellat corrupti consequuntur quis aperiam, magnam nihil doloribus!</p>
     </span>
     <section>
-        <h3>CV</h3>
+        <h3 >CV</h3>
         <ul>
             <li>Jahr1</li>
             <li>Jahr2</li>
             <li>Jahr3</li>
             <li>Jahr4</li>
         </ul>
-        <ul>
+        <ul class="mb-3">
             <li>Tätigkeit1</li>
             <li>Tätigkeit2</li>
             <li>Tätigkeit3</li>
@@ -108,6 +118,8 @@
 
 <!-- Footer mit "Impressum" und Copyrightzeichen -->
 <footer></footer>
+
+</div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
